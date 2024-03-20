@@ -16,44 +16,44 @@ except Exception as e:
 
 
 
-STAGE_NAME = "Base model prepration stage"
+# STAGE_NAME = "Base model prepration stage"
 
 
-try:
-    logger.info(f"*******************")
-    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-    obj = PrepareBaseModelTrainingPipeline()
-    obj.main()
-    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-except Exception as e:
-    logger.exception(e)
-    raise e
-
-
-
-STAGE_NAME = "Model training stage"
-
-try:
-    logger.info(f"*******************")
-    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-    obj = ModelTrainingPipeline()
-    obj.main()
-    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-except Exception as e:
-    logger.exception(e)
-    raise e
+# try:
+#     logger.info(f"*******************")
+#     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+#     obj = PrepareBaseModelTrainingPipeline()
+#     obj.main()
+#     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+# except Exception as e:
+#     logger.exception(e)
+#     raise e
 
 
 
-STAGE_NAME = "Evaluation stage"
+# STAGE_NAME = "Model training stage"
 
-try:
-    logger.info(f"*******************")
-    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-    obj = EvaluationPipeline()
-    obj.main()
-    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-except Exception as e:
+# try:
+#     logger.info(f"*******************")
+#     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+#     obj = ModelTrainingPipeline()
+#     obj.main()
+#     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+# except Exception as e:
+#     logger.exception(e)
+#     raise e
 
-    logger.exception(e)
-    raise e
+
+
+# STAGE_NAME = "Evaluation stage"
+
+# try:
+#     logger.info(f"*******************")
+#     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+#     obj = EvaluationPipeline()
+#     obj.main()
+#     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+# except Exception as e:
+
+#     logger.exception(e)
+#     raise e
